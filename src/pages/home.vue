@@ -46,16 +46,6 @@
   }
 </script>
 
-<style scoped>
-  .link {
-    text-decoration: none;
-  }
-  .btn {
-    display: block;
-    width: 100%;
-    height: 40px;
-    background-color: #00BCF3;
-    color: white;
-    margin-top: 10px;
-  }
+<style lang="scss" scoped>
+  @import "../assets/css/home.css";
 </style>
