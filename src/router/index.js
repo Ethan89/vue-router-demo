@@ -10,12 +10,16 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: Home,
     },
     {
       path: '/target',
       name: 'Target',
-      component: Target
+      component: Target,
+      children: [{
+        path: 'childTarget',
+        component: Target
+      }],
     },
     {
       path: '/target/:userId',

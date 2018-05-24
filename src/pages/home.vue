@@ -15,6 +15,7 @@
     <button class="btn" @click="action1">路由name跳转(不带参数)</button>
     <button class="btn" @click="action2">路由name跳转(带参数)</button>
     <button class="btn" @click="action3">路由name跳转(带参数,多个)</button>
+    <button class="btn" @click="action4">子路由path跳转(不带参数)</button>
   </div>
 </template>
 
@@ -41,11 +42,17 @@
           name: 'target',
           params: {userId: '1234',userName: '李四'}
         })
+      },
+
+      action4() {
+        this.$router.push({
+          path: '/target/childTarget'
+        })
       }
     }
   }
 </script>
 
 <style lang="scss" scoped>
-  @import "../assets/css/home.css";
+  @import "../assets/css/home.scss";
 </style>
