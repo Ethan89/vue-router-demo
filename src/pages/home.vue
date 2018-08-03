@@ -16,6 +16,11 @@
     <button class="btn" @click="action2">路由name跳转(带参数)</button>
     <button class="btn" @click="action3">路由name跳转(带参数,多个)</button>
     <button class="btn" @click="action4">子路由path跳转(不带参数)</button>
+
+    <!-- 无限滚动demo -->
+    <button class="btn" @click="action5">无限滚动(未完成)</button>
+
+    <button class="btn" @click="action6">AlloyFinger demo</button>
   </div>
 </template>
 
@@ -48,6 +53,18 @@
         this.$router.push({
           path: '/target/childTarget'
         })
+      },
+
+      action5(){
+        this.$router.push({
+          name: 'ScrollDemo'
+        })
+      },
+
+      action6() {
+        this.$router.push({
+          name: 'AlloyFingerDouble'
+        })
       }
     }
   }
@@ -55,4 +72,12 @@
 
 <style lang="scss" scoped>
   @import "../assets/css/home.scss";
+
+  .container {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
 </style>

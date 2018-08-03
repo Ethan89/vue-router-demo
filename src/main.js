@@ -3,6 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import AlloyFinger from 'alloyfinger'
+import AlloyFingerPlugin from 'alloyfinger/vue/alloy_finger.vue'
+Vue.use(AlloyFingerPlugin, {
+    AlloyFinger
+})
 
 Vue.config.productionTip = false
 
