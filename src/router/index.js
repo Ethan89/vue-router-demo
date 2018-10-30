@@ -4,6 +4,10 @@ import Home from '../pages/home'
 import Target from '../pages/Target'
 import ScrollDemo from './../pages/scrollDemo.vue'
 import AlloyFingerDouble from './../pages/AlloyFingerDouble.vue'
+import skin from './../pages/skin.vue'
+import PluginDemo from './../pages/pluginDemo.vue'
+import asyncDemo from './../pages/asyncDemo.vue'
+import asyncDemoChild from './../pages/asyncDemoChild.vue'
 
 Vue.use(Router)
 
@@ -42,6 +46,26 @@ export default new Router({
       path: '/alloyDemo',
       name: 'AlloyFingerDouble',
       component: AlloyFingerDouble,
+    },
+    {
+      path: '/skin',
+      name: 'Skin',
+      component: skin,
+    },
+    {
+      path: '/pluginDemo',
+      name: 'PluginDemo',
+      component: PluginDemo,
+    },
+    {
+      path: '/asyncDemo',
+      name: 'AsyncDemo',
+      component: asyncDemo,
+    },
+    {
+      path: '/asyncDemo/child',
+      name: 'AsyncDemoChild',
+      component: asyncDemoChild
     }
   ]
 })

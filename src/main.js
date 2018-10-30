@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import AlloyFinger from 'alloyfinger'
 import AlloyFingerPlugin from 'alloyfinger/vue/alloy_finger.vue'
+import './assets/themes/theme.scss'
 Vue.use(AlloyFingerPlugin, {
     AlloyFinger
 })
